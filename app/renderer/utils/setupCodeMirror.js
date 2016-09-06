@@ -4,7 +4,7 @@ import './codemirror/mode/markdown/markdown';
 import '../styles/themes/base16-light.css';
 import '../styles/themes/base16-dark.css';
 
-export default function setupCodeMirror (editorNode) {
+export default function setupCodeMirror (editorNode, onContentChange) {
 	const codeMirrorDefaultConfig = {
 		mode: 'markdown',
 		value: '',
@@ -18,6 +18,6 @@ export default function setupCodeMirror (editorNode) {
 	};
 	const codeMirrorConfig = codeMirrorDefaultConfig;
 	const codeMirrorInstance = CodeMirror.fromTextArea(editorNode, codeMirrorConfig);
-	codeMirrorInstance.on('change', () => { console.log('hey!') });
+	codeMirrorInstance.on('change', onContentChange);
 	return codeMirrorInstance;
 }

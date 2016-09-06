@@ -3,7 +3,7 @@ import EditorContainer from '../containers/EditorContainer';
 
 const App = () => {
 	return (
-		<div>
+		<div className="app-wrapper">
 			<EditorContainer />
 		</div>
 	)	

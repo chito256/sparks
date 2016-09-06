@@ -1,3 +1,13 @@
+/*
+------------------------------------
+------------------------------------
+Edited by Chi To (GitHub @sjliang)
+Search for 'Tweaked'
+------------------------------------
+------------------------------------
+*/
+
+
 /* BASICS */
 
 .CodeMirror {
@@ -307,6 +317,7 @@ div.CodeMirror-cursors {
   visibility: hidden;
   position: relative;
   z-index: 3;
+  transition: all 250ms ease-in-out; /* Tweaked */
 }
 div.CodeMirror-dragcursors {
   visibility: visible;

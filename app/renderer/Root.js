@@ -3,7 +3,7 @@ import AppContainer from './containers/AppContainer';
 import './styles/main.css';
 
 const Root = () => (
-	<AppContainer />	
+	<AppContainer />
 )
 
 export default Root;

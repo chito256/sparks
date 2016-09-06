@@ -7,7 +7,7 @@ const Editor = React.createClass({
 	render() {
 		return (
 			<section id="editor" className="editor-wrapper" >
-				<textarea ref="editor" id="editor-area" />
+				<textarea ref="editor" className="editor-area" />
 			</section>
 		)
 	}

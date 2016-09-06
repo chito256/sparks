@@ -6,6 +6,10 @@
 //
 // You can find some technical background for some of the code below
 // at http://marijnhaverbeke.nl/blog/#cm-internals .
+// 
+// Edited by Chi To (GitHub @sjliang)
+// Search for 'Tweaked'
+// 
 
 (function(mod) {
   if (typeof exports == "object" && typeof module == "object") // CommonJS
@@ -2438,13 +2442,13 @@
     var display = cm.display;
     clearInterval(display.blinker);
     var on = true;
-    display.cursorDiv.style.visibility = "";
+    display.cursorDiv.style.opacity = 1; // Tweaked (visibility -> opacity)
     if (cm.options.cursorBlinkRate > 0)
       display.blinker = setInterval(function() {
-        display.cursorDiv.style.visibility = (on = !on) ? "" : "hidden";
+        display.cursorDiv.style.opacity = (on = !on) ? 1 : 0; // Tweaked (visibility -> opacity)
       }, cm.options.cursorBlinkRate);
     else if (cm.options.cursorBlinkRate < 0)
-      display.cursorDiv.style.visibility = "hidden";
+      display.cursorDiv.style.opacity = 0; // Tweaked (visibility -> opacity)
   }
 
   // HIGHLIGHT WORKER

@@ -6,6 +6,8 @@
     CodeMirror template by Jan T. Sott (https://github.com/idleberg/base16-codemirror)
     Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
 
+		Edited by Chi To (GitHub @sjliang)
+
 */
 
 .cm-s-base16-light.CodeMirror { background: #f5f5f5; color: #202020; }
@@ -16,7 +18,7 @@
 .cm-s-base16-light .CodeMirror-guttermarker { color: #ac4142; }
 .cm-s-base16-light .CodeMirror-guttermarker-subtle { color: #b0b0b0; }
 .cm-s-base16-light .CodeMirror-linenumber { color: #b0b0b0; }
-.cm-s-base16-light .CodeMirror-cursor { border-left: 1px solid #505050; }
+.cm-s-base16-light .CodeMirror-cursor { border-left: 3px solid #5CB7F2; }
 
 .cm-s-base16-light span.cm-comment { color: #8f5536; }
 .cm-s-base16-light span.cm-atom { color: #aa759f; }
