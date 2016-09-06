@@ -1,0 +1,26 @@
+{
+  "name": "sparks",
+  "productName": "Sparks",
+  "version": "1.0.0",
+  "description": "A minimal Markdown editor",
+  "main": "./main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjliang/sparks.git"
+  },
+  "author": {
+    "name": "Chi To"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sjliang/sparks/issues"
+  },
+  "homepage": "https://github.com/sjliang/sparks#readme",
+  "dependencies": {
+    "markdown-it": "^7.0.1",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0"
+  }
+}
