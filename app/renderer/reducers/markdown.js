@@ -5,7 +5,8 @@ const initialState = {
 	html: { __html: '' },
 	saved: true,
 	path: '',
-	name: ''
+	name: '',
+	initialMarkdown: ''
 }
 
 const markdownReducer = (state = initialState, action) => {
@@ -25,7 +26,17 @@ const markdownReducer = (state = initialState, action) => {
 				html: { __html: md.render(action.text) },
 				saved: true,
 				path: action.filePath,
-				name: action.fileName
+				name: action.fileName,
+				initialMarkdown: action.text
+			}
+		}
+		case 'SAVE_FILE': {
+			return {
+				...state,
+				saved: true,
+				path: action.filePath,
+				name: action.fileName,
+				initialMarkdown: state.rawMarkdown
 			}
 		}
 		default:

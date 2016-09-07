@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import App from '../components/App';
 import * as actions from '../actions/actions';
-import fileIO from '../ipc/fileIO';
+import fileIO from '../ipc/io/fileIO';
 
 const AppContainer = React.createClass({
 	componentDidMount() {
@@ -17,6 +17,9 @@ const AppContainer = React.createClass({
 	},
 	openFile(text, filePath, fileName) {
 		this.props.openFile(text, filePath, fileName);
+	},
+	saveFile(filePath, fileName) {
+		this.props.saveFile(filePath, fileName);
 	},
 	render() {
 		return (
@@ -37,6 +40,9 @@ const mapDispatchToProps = (dispatch) => {
 	return {
 		openFile: (text, filePath, fileName) => {
 			dispatch(actions.openFile(text, filePath, fileName));
+		},
+		saveFile: (filePath, fileName) => {
+			dispatch(actions.saveFile(filePath, fileName));
 		}
 	}
 }

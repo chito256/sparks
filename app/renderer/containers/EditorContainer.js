@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import Editor from '../components/Editor';
 import setupCodeMirror from '../utils/setupCodeMirror';
 import * as actions from '../actions/actions';
+const {getCurrentWindow} = window.require('electron').remote;
 
 const EditorContainer = React.createClass({
 	// Setup a new CodeMirror instance

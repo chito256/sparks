@@ -10,3 +10,11 @@ export function openFile (text, filePath, fileName) {
 		fileName: fileName
 	}
 }
+
+export function saveFile (filePath, fileName) {
+	return {
+		type: 'SAVE_FILE',
+		filePath: filePath,
+		fileName: fileName
+	}
+}
