@@ -1,3 +1,5 @@
+const {BrowserWindow} = require('electron');
+
 const edit = {
 	label: 'Edit',
 	submenu: [
@@ -20,10 +22,18 @@ const edit = {
 			role: 'undo'
 		},
 		{
+			role: 'delete'
+		},
+		{
 			type: 'separator'
 		},
 		{
-			role: 'delete'
+			label: 'Preferences',
+			click: (menuItem, browserWindow) => {
+				const window = new BrowserWindow({ width: 420, height: 480, resizable: false });
+				window.loadURL(`file://${__dirname}/../../../settings.html`);
+				window.openDevTools();
+			}
 		}
 	]
 }

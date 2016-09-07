@@ -1,0 +1,11 @@
+{
+  "editor": {
+    "tabSize": "4",
+    "theme": "base16-dark"
+  },
+  "pdf": {
+    "paperFormat": "A4",
+    "paperOrientation": "portrait",
+    "paperBorder": "cm"
+  }
+}
