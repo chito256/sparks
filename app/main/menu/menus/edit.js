@@ -32,7 +32,6 @@ const edit = {
 			click: (menuItem, browserWindow) => {
 				const window = new BrowserWindow({ width: 420, height: 480, resizable: false });
 				window.loadURL(`file://${__dirname}/../../../settings.html`);
-				window.openDevTools();
 			}
 		}
 	]

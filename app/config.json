@@ -1,7 +1,7 @@
 {
   "editor": {
-    "tabSize": "4",
-    "theme": "base16-dark"
+    "tabSize": "2",
+    "theme": "base16-light"
   },
   "pdf": {
     "paperFormat": "A4",
