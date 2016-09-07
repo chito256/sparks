@@ -6,6 +6,6 @@
   "pdf": {
     "paperFormat": "A4",
     "paperOrientation": "portrait",
-    "paperBorder": "cm"
+    "paperBorder": "2cm"
   }
 }

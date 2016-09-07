@@ -1,4 +1,6 @@
 const {BrowserWindow} = require('electron');
+const fs = require('fs');
+const path = require('path');
 
 exports.createWindow = () => {
 	const windowDefaults = {
@@ -9,6 +11,8 @@ exports.createWindow = () => {
 	};
 	let window = new BrowserWindow(windowDefaults);
 	window.loadURL(`file://${__dirname}/../index.html`);
+
+	window.userConfig = fs.readFileSync(path.join(__dirname, '..', 'config.json'), 'utf8');
 
 	window.on('closed', () => {
 		window = null;

@@ -38,10 +38,20 @@
     "webpack-dev-server": "^1.15.1"
   },
   "dependencies": {
+    "codemirror": "^5.18.2",
     "markdown-it": "^7.0.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-redux": "^4.4.5",
     "redux": "^3.6.0"
+  },
+  "build": {
+    "appId": "sjliang.sparks",
+    "app-category-type": "public.app-category.utilities",
+    "title": "Sparks",
+    "asar": false,
+    "linux": [
+      "deb"
+    ]
   }
 }

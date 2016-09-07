@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Editor from '../components/Editor';
-import setupCodeMirror from '../utils/setupCodeMirror';
+import setupCodeMirror from '../codemirror';
 import * as actions from '../actions/actions';
 const {getCurrentWindow} = window.require('electron').remote;
 

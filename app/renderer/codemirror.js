@@ -1,14 +1,13 @@
-const fs = window.require('fs');
-const path = window.require('path');
-import CodeMirror from './codemirror/lib/codemirror.js';
-import './codemirror/lib/codemirror.css';
-import './codemirror/mode/markdown/markdown';
-import '../styles/themes/base16-light.css';
-import '../styles/themes/base16-dark.css';
+const {getCurrentWindow} = window.require('electron').remote;
+import CodeMirror from '../../node_modules/codemirror/lib/codemirror.js';
+import '../../node_modules/codemirror/lib/codemirror.css';
+import '../../node_modules/codemirror/mode/markdown/markdown';
+import './styles/themes/base16-light.css';
+import './styles/themes/base16-dark.css';
 
 export default function setupCodeMirror (editorNode, onContentChange) {
 	let codeMirrorUserConfig = null;
-	const userEditorConfig = fs.readFileSync(path.join(__dirname, '..', '..', 'config.json'), 'utf8');
+	const userEditorConfig = getCurrentWindow().userConfig;
 	if (userEditorConfig) {
 		codeMirrorUserConfig = JSON.parse(userEditorConfig).editor;
 	}

@@ -1,4 +1,4 @@
-import md from '../utils/parser';
+import md from '../parser';
 
 const initialState = {
 	rawMarkdown: '',

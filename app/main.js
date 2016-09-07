@@ -1,5 +1,7 @@
 const {app, BrowserWindow, Menu} = require('electron');
 const template = require('./main/menu/template');
+const fs = require('fs');
+const path = require('path');
 
 // Global window object
 let window;
@@ -13,6 +15,8 @@ function createWindow () {
 	};
 	window = new BrowserWindow(windowDefaults);
 	window.loadURL(`file://${__dirname}/index.html`);
+
+	window.userConfig = fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8');
 
 	window.on('closed', () => {
 		window = null;
