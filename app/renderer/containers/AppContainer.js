@@ -3,10 +3,12 @@ import {connect} from 'react-redux';
 import App from '../components/App';
 import * as actions from '../actions/actions';
 import fileIO from '../ipc/io/fileIO';
+import togglePreview from '../ipc/preview/togglePreview';
 
 const AppContainer = React.createClass({
 	componentDidMount() {
 		fileIO(this);
+		togglePreview();
 	},
 	getInfo() {
 		return {

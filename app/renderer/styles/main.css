@@ -31,8 +31,9 @@
 	z-index: 5;
 	float: left;
 	display: block;
-	width: 50%;
+	width: 100%;
 	height: 100%;
+	transition: all 250ms ease-in-out;
 }
 
 /* Editor - CodeMirror */
@@ -45,8 +46,9 @@
 .app-wrapper .preview-wrapper {
 	float: right;
 	display: block;
-	width: 50%;
+	width: 0;
 	height: 100%;
+	transition: all 250ms ease-in-out;
 }
 
 /* Preview */
@@ -58,3 +60,11 @@
   white-space: normal;
 	overflow: auto;
 }
+
+/* ============== */
+/* Toggle Preview */
+/* ============== */
+.app-wrapper .editor-wrapper.shrink-editor { width: 50%; }
+.app-wrapper .preview-wrapper.extend-preview { width: 50%; }
+.app-wrapper .editor-wrapper.shrink-editor--full { width: 0; }
+.app-wrapper .preview-wrapper.extend-preview--full { width: 100%; }
