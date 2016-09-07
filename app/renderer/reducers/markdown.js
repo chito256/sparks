@@ -18,6 +18,16 @@ const markdownReducer = (state = initialState, action) => {
 				saved: false
 			}
 		}
+		case 'OPEN_FILE': {
+			return {
+				...state,
+				rawMarkdown: action.text,
+				html: { __html: md.render(action.text) },
+				saved: true,
+				path: action.filePath,
+				name: action.fileName
+			}
+		}
 		default:
 		 return state;
 	}

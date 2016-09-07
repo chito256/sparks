@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import {connect} from 'react-redux';
 import Editor from '../components/Editor';
 import setupCodeMirror from '../utils/setupCodeMirror';
 import * as actions from '../actions/actions';

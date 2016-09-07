@@ -1,5 +1,7 @@
-const { app, BrowserWindow } = require('electron');
+const {app, BrowserWindow, Menu} = require('electron');
+const template = require('./main/menu/template');
 
+// Global window object
 let window;
 
 function createWindow () {
@@ -23,6 +25,10 @@ function createWindow () {
 
 app.on('ready', createWindow);
 
+// Set app's menu
+const menu = Menu.buildFromTemplate(template);
+Menu.setApplicationMenu(menu);
+
 // For macOS
 app.on('window-all-closed', () => {
 	if (process.platform !== 'darwin') {
@@ -35,6 +41,3 @@ app.on('activate', () => {
 		createWindow();
 	}
 });
-
-// Exporting the createWindow function
-module.exports = createWindow;
