@@ -3,7 +3,7 @@ const fs = window.require('fs');
 const path = window.require('path');
 const { showOpenFileDialog, showSaveFileDialog } = require('./IOOperations');
 
-const fileIO = (appContainer) => {
+export default function fileIO (appContainer) {
 	// Listens for file open operation
 	// ===============================
 	ipcRenderer.on('sparks::open-file', (event, arg) => {
@@ -38,5 +38,3 @@ const fileIO = (appContainer) => {
 		}
 	});
 }
-
-module.exports = fileIO;

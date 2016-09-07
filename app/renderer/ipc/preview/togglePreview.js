@@ -1,6 +1,6 @@
 const {ipcRenderer} = window.require('electron');
 
-const togglePreview = () => {
+export default function togglePreview () {
 	ipcRenderer.on('sparks::toggle-preview', (event, arg) => {
 		const editorWrapper = document.getElementsByClassName('editor-wrapper')[0];
 		const previewWrapper = document.getElementsByClassName('preview-wrapper')[0];
@@ -16,5 +16,3 @@ const togglePreview = () => {
 		}
 	});
 }
-
-module.exports = togglePreview;

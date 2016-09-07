@@ -4,11 +4,13 @@ import App from '../components/App';
 import * as actions from '../actions/actions';
 import fileIO from '../ipc/io/fileIO';
 import togglePreview from '../ipc/preview/togglePreview';
+import shouldWindowClose from '../ipc/window/shouldWindowClose';
 
 const AppContainer = React.createClass({
 	componentDidMount() {
 		fileIO(this);
 		togglePreview();
+		shouldWindowClose(this);
 	},
 	getInfo() {
 		return {

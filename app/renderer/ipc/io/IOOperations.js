@@ -2,7 +2,7 @@ const {dialog, getCurrentWindow} = window.require('electron').remote;
 const path = window.require('path');
 const fs = window.require('fs');
 
-exports.showOpenFileDialog = (appContainer) => {
+export function showOpenFileDialog (appContainer) {
 	dialog.showOpenDialog({
 		title: 'Open File',
 		filters: [
@@ -19,7 +19,7 @@ exports.showOpenFileDialog = (appContainer) => {
 	});
 }
 
-exports.showSaveFileDialog = (appContainer) => {
+export function showSaveFileDialog (appContainer) {
 	dialog.showSaveDialog({
 		title: 'Save File',
 		filters: [
