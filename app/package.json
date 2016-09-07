@@ -2,7 +2,7 @@
   "name": "sparks",
   "productName": "Sparks",
   "version": "1.0.0",
-  "description": "A minimal Markdown editor",
+  "description": "A minimal Markdown writer",
   "main": "./main.js",
   "repository": {
     "type": "git",

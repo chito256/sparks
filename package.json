@@ -2,13 +2,14 @@
   "name": "sparks",
   "productName": "Sparks",
   "version": "1.0.0",
-  "description": "A minimal Markdown editor",
+  "description": "A minimal Markdown writer",
   "main": "./app/main.js",
   "scripts": {
     "dev-server": "cross-env NODE_ENV=development webpack-dev-server --inline --content-base app/build/",
     "start-hot": "cross-env NODE_ENV=development electron ./app/main.js",
     "bundle": "cross-env NODE_ENV=production webpack -p",
-    "build:test": "npm run bundle && build --dir"
+    "build:test": "npm run bundle && build --dir",
+    "clean:all": "rm -r dist && rm -r app/build && rm -r app/node_modules"
   },
   "repository": {
     "type": "git",
@@ -51,7 +52,8 @@
     "title": "Sparks",
     "asar": false,
     "linux": [
-      "deb"
+      "deb",
+      "zip"
     ]
   }
 }
