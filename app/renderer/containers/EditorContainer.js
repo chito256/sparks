@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Editor from '../components/Editor';
 import setupCodeMirror from '../utils/setupCodeMirror';
+import * as actions from '../actions/actions';
 
 const EditorContainer = React.createClass({
 	// Setup a new CodeMirror instance
@@ -40,7 +41,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
 	return {
 		handleChange: (text) => {
-			dispatch({ type: 'EDIT_TEXT', text: text });
+			dispatch(actions.editText(text));
 		}
 	}
 }
