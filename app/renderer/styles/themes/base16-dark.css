@@ -40,3 +40,6 @@
 /* Overrides default theme */
 .cm-header { font-weight: normal; color: #5CB7F2; }
 .cm-strong { font-weight: bold; }
+
+/* Scrollbar */
+.cm-s-base16-dark ::-webkit-scrollbar-thumb { background-color: #555555; }
