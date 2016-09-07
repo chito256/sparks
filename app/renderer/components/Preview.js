@@ -1,5 +1,5 @@
 import React from 'react';
-// import '../styles/themes/preview/Leo.css';
+import '../styles/themes/preview/Leo.css';
 
 const Preview = ({ htmlText }) => {
 	return (

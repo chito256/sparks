@@ -10,7 +10,7 @@
 
 */
 
-.cm-s-base16-light.CodeMirror { background: #f5f5f5; color: #202020; }
+.cm-s-base16-light.CodeMirror { background: #f2f2f2; color: #202020; }
 .cm-s-base16-light div.CodeMirror-selected { background: #e0e0e0; }
 .cm-s-base16-light .CodeMirror-line::selection, .cm-s-base16-light .CodeMirror-line > span::selection, .cm-s-base16-light .CodeMirror-line > span > span::selection { background: #e0e0e0; }
 .cm-s-base16-light .CodeMirror-line::-moz-selection, .cm-s-base16-light .CodeMirror-line > span::-moz-selection, .cm-s-base16-light .CodeMirror-line > span > span::-moz-selection { background: #e0e0e0; }
@@ -18,7 +18,7 @@
 .cm-s-base16-light .CodeMirror-guttermarker { color: #ac4142; }
 .cm-s-base16-light .CodeMirror-guttermarker-subtle { color: #b0b0b0; }
 .cm-s-base16-light .CodeMirror-linenumber { color: #b0b0b0; }
-.cm-s-base16-light .CodeMirror-cursor { border-left: 3px solid #5CB7F2; }
+.cm-s-base16-light .CodeMirror-cursor { border-left: 3px solid #5cb7f2; }
 
 .cm-s-base16-light span.cm-comment { color: #8f5536; }
 .cm-s-base16-light span.cm-atom { color: #aa759f; }
@@ -38,3 +38,7 @@
 
 .cm-s-base16-light .CodeMirror-activeline-background { background: #DDDCDC; }
 .cm-s-base16-light .CodeMirror-matchingbracket { text-decoration: underline; color: white !important; }
+
+/* Overrides default theme */
+.cm-header { font-weight: normal; color: #5CB7F2; }
+.cm-strong { font-weight: bold; }
