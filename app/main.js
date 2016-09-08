@@ -12,6 +12,7 @@ function createWindow () {
 		height: 640,
 		minWidth: 640,
 		minHeight: 420,
+		icon: path.join(__dirname, '..', 'build', 'icons', '256x256.png')
 	};
 	window = new BrowserWindow(windowDefaults);
 	window.loadURL(`file://${__dirname}/index.html`);

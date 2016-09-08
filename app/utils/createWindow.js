@@ -8,6 +8,7 @@ exports.createWindow = () => {
 		height: 640,
 		minWidth: 640,
 		minHeight: 420,
+		icon: path.join(__dirname, '..', '..', 'build', 'icons', '256x256.png')
 	};
 	let window = new BrowserWindow(windowDefaults);
 	window.loadURL(`file://${__dirname}/../index.html`);

@@ -20,7 +20,7 @@ export default function setupCodeMirror (editorNode, onContentChange) {
 		cursorScrollMargin: 2,
 		showCursorWhenSelecting: true,
 		autofocus: true,
-		cursorBlinkRate: 700
+		cursorBlinkRate: 600
 	};
 	const codeMirrorConfig = codeMirrorUserConfig != null ? {...codeMirrorDefaultConfig, ...codeMirrorUserConfig} : codeMirrorDefaultConfig;
 	const codeMirrorInstance = CodeMirror.fromTextArea(editorNode, codeMirrorConfig);
