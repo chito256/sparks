@@ -10,6 +10,7 @@
     "dev": "concurrently \"npm run dev-server\" \"npm run start-hot\"",
     "bundle": "cross-env NODE_ENV=production webpack -p",
     "build:test": "npm run bundle && build --dir",
+    "build:prod": "npm run bundle && build",
     "clean:all": "rm -r dist && rm -r app/build && rm -r app/node_modules"
   },
   "repository": {
@@ -46,6 +47,7 @@
     "markdown-it-emoji": "^1.2.0",
     "markdown-it-footnote": "^3.0.1",
     "markdown-it-task-lists": "^1.4.1",
+    "markdown-pdf": "^7.0.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-redux": "^4.4.5",
@@ -56,9 +58,11 @@
     "app-category-type": "public.app-category.utilities",
     "title": "Sparks",
     "asar": false,
-    "linux": [
-      "deb",
-      "zip"
-    ]
+    "linux": {
+      "target": [
+        "deb",
+        "zip"
+      ]
+    }
   }
 }

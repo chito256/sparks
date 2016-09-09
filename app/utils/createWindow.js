@@ -13,6 +13,7 @@ exports.createWindow = () => {
 	let window = new BrowserWindow(windowDefaults);
 	window.loadURL(`file://${__dirname}/../index.html`);
 
+	// Get user configuration
 	window.userConfig = fs.readFileSync(path.join(__dirname, '..', 'config.json'), 'utf8');
 
 	window.on('closed', () => {

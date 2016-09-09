@@ -5,6 +5,8 @@ body {
 	--mono-type: 'Fira Mono', 'Inconsolata', 'Menlo', 'Consolas', monospace;;
 }
 
+::-webkit-scrollbar-thumb { background-color: #cccccc; }
+
 .preview-area {
 	color: #242424;
 	background-color: #fefefe;
@@ -34,7 +36,9 @@ a:hover { text-decoration: underline; }
 /* Lists */
 /* ============== */
 ul, ol { list-style-position: inside; padding-left: 1em; }
+ul.task-list { list-style-type: none; }
 li { line-height: 1.6em; }
+li.footnote-item { padding-left: 0; }
 
 /* Quoting quotes */
 /* ============== */

@@ -13,7 +13,7 @@ export function showOpenFileDialog (appContainer) {
 		if (filePaths) {
 			const fileName = path.basename(filePaths[0]),
 						fileData = fs.readFileSync(filePaths[0], 'utf8');
-			getCurrentWindow().setTitle(fileName);
+			getCurrentWindow().setTitle(fileName + ' - Sparks');
 			appContainer.openFile(fileData, filePaths[0], fileName);
 		}
 	});
@@ -29,7 +29,7 @@ export function showSaveFileDialog (appContainer) {
 		if (filePath) {
 			const fileName = path.basename(filePath),
 						data = appContainer.getInfo().rawMarkdown;
-			getCurrentWindow().setTitle(fileName);
+			getCurrentWindow().setTitle(fileName + ' - Sparks');
 			fs.writeFile(filePath, data, 'utf8', (err) => {
 				if (err) throw err;
 			});

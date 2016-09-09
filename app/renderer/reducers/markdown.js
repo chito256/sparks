@@ -16,7 +16,7 @@ const markdownReducer = (state = initialState, action) => {
 				...state,
 				rawMarkdown: action.text,
 				html: { __html: md.render(action.text) },
-				saved: false
+				saved: action.text === state.initialMarkdown
 			}
 		}
 		case 'OPEN_FILE': {

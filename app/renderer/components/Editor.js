@@ -1,4 +1,6 @@
 import React from 'react';
+import ModificationIndicator from '../containers/ModificationIndicator';
+import WordCounter from '../containers/WordCounter';
 
 const Editor = React.createClass({
 	componentDidMount() {
@@ -8,6 +10,8 @@ const Editor = React.createClass({
 		return (
 			<section id="editor" className="editor-wrapper" >
 				<textarea ref="editor" className="editor-area" />
+				<ModificationIndicator />
+				<WordCounter />
 			</section>
 		)
 	}

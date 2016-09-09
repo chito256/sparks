@@ -5,6 +5,9 @@
 		<title>Settings</title>
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
 		<style type="text/css">
+
+			::selection { background-color: #cccccc; }
+
 			body {
 				margin: 0;
 				padding: 10px;
@@ -155,7 +158,7 @@
 					<div class="paper-border-wrapper">
 						<label>Paper Border</label>
 						<div class="paper-border-input-wrapper">
-							<input id="paper-border-input" type="number" name="paper-border" value="2">
+							<input id="paper-border-input" type="number" name="paper-border" min="0" value="2">
 							<select id="paper-border-unit-select">
 								<option value="cm" selected>cm</option>
 								<option value="mm">mm</option>

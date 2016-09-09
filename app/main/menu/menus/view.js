@@ -19,6 +19,13 @@ const view = {
 				const fullPreview = true;
 				browserWindow.webContents.send('sparks::toggle-preview', fullPreview);
 			}
+		},
+		{
+			type: 'separator'
+		},
+		{
+			label: 'Full Screen',
+			role: 'togglefullscreen'
 		}
 	]
 }
