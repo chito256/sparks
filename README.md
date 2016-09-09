@@ -19,14 +19,22 @@ Sparks is still under development, . You can get the latest release [here](https
 - Foot notes support
 - Export as PDF
 
+### Screenshots
+
+![Sparks - Writing](./app/static/screenshots/sparks-writing.png)
+
+![Sparks - Settings](./app/static/screenshots/sparks-settings.png)
+
+![Sparks - About](./app/static/screenshots/sparks-about.png)
+
 ### Todos
 
 - [x] Fix image's width in preview area.
-- [ ] Add screenshots to README.
+- [x] Add screenshots to README.
+- [x] Configure `WordCounter` to only count alphanumeric words.
 - [ ] Add Wiki.
 - [ ] Add more editor & preview themes.
 - [ ] Re-configure how the `Preview` component uses themes.
-- [x] Configure `WordCounter` to only count alphanumeric words.
 
 ### Tech Stack
 
