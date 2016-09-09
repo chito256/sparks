@@ -23,6 +23,8 @@ Sparks is still under development, . You can get the latest release [here](https
 
 ![Sparks - Writing](./app/static/screenshots/sparks-writing.png)
 
+![Sparks - Preview](./app/static/screenshots/sparks-preview.png)
+
 ![Sparks - Settings](./app/static/screenshots/sparks-settings.png)
 
 ![Sparks - About](./app/static/screenshots/sparks-about.png)
