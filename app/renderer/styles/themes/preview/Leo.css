@@ -64,9 +64,12 @@ code {
 /* Images */
 /* ============== */
 img {
-	width: 100%;
 	padding-top: 0.1em;
 	padding-bottom: 0.1em;
+}
+
+img[alt='wide-img'] {
+	width: 100%;
 }
 
 /* Blockquotes */

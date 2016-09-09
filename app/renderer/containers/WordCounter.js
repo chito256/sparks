@@ -5,10 +5,11 @@ function countWords (str) {
 	if (str.length === 0) {
 		return 0;
 	}
-	return str.trim()
+	const strArr = str.trim()
 	.replace(/\n/, ' ')
 	.replace(/\t/, ' ')
-	.split(/\s+/).length;
+	.split(/\s+/);
+	return strArr.filter((word) => { return word.match(/\w+/) }).length;
 }
 
 const wordCounterStyle = {
