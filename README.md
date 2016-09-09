@@ -1,5 +1,5 @@
 <h1 align="center">
-	<img src="./build/256x256.png" width="128">
+	<img src="./build/icons/256x256.png" width="128">
 	<br>
 	Sparks
 </h1>
