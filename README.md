@@ -7,7 +7,7 @@
 
 ### Install
 
-Sparks is still under development, . You can get the latest release [here](https://github.com/sjliang/sparks).
+Sparks is still under development. You can get the latest release [here](https://github.com/sjliang/sparks).
 
 ### Features
 
@@ -18,12 +18,24 @@ Sparks is still under development, . You can get the latest release [here](https
 - Task lists support
 - Foot notes support
 
+### Usage
+
+- Shortcuts:
+  - `Command (Ctrl) + N`: Create a new file
+  - `Command (Ctrl) + O`: Open a file
+  - `Command (Ctrl) + S`: Save a file
+  - `Command (Ctrl) + Shift + S`: Save a file as...
+  - `Command (Ctrl) + P`: Toggle half preview
+  - `Command (Ctrl) + Shift + P`: Toggle full preview
+
+
 ### Todos
 
 - [x] Fix image's width in preview area.
 - [x] Add screenshots to README.
 - [x] Configure `WordCounter` to only count alphanumeric words.
 - [ ] Add Wiki.
+- [ ] Add PDF export support.
 
 ### Tech Stack
 
