@@ -14,7 +14,8 @@ exports.createWindow = () => {
 	window.loadURL(`file://${__dirname}/../index.html`);
 
 	// Get user configuration
-	window.userConfig = fs.readFileSync(path.join(__dirname, '..', 'config.json'), 'utf8');
+	const defaultConfig = path.join(__dirname, '..', 'default-config.json');
+	window.userConfig = fs.readFileSync(defaultConfig, 'utf8');
 
 	window.on('closed', () => {
 		window = null;

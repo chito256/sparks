@@ -16,5 +16,11 @@
 	      document.write(bundleJS.outerHTML);
 	    }());
 		</script>
+		<script type="text/javascript">
+			const {getCurrentWindow} = require('electron').remote;
+			document.ondrop = (ev) => {
+				getCurrentWindow().webContents.send('sparks::open-file', ev.dataTransfer.files[0].path);
+			}
+		</script>
 	</body>
 </html>

@@ -2,10 +2,5 @@
   "editor": {
     "tabSize": "2",
     "theme": "base16-light"
-  },
-  "pdf": {
-    "paperFormat": "A4",
-    "paperOrientation": "portrait",
-    "paperBorder": "2cm"
   }
 }

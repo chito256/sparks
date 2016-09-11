@@ -57,6 +57,3 @@ Sparks is an open-source app, you can contribute to the app by [reporting issues
 ### License
 
 MIT License. Copyright (c) 2016 Chi To.
-
-
-

@@ -1,13 +1,22 @@
 const {ipcRenderer} = window.require('electron');
+const {getCurrentWindow} = window.require('electron').remote;
 const fs = window.require('fs');
 const path = window.require('path');
-const { showOpenFileDialog, showSaveFileDialog } = require('./IOOperations');
+const {showOpenFileDialog, showSaveFileDialog} = require('./IOOperations');
 
 export default function fileIO (appContainer) {
 	// Listens for file open operation
 	// ===============================
 	ipcRenderer.on('sparks::open-file', (event, arg) => {
 		const currentSaveState = appContainer.getInfo().saved;
+		// Check if a file is dropped
+		if (arg) {
+			const fileData = fs.readFileSync(arg, 'utf8');
+			const fileName = path.basename(arg);
+			appContainer.openFile(fileData, arg, fileName);
+			getCurrentWindow().setTitle(fileName);
+			return;
+		}
 		if (currentSaveState === false) {
 			const confirmOpenFile = confirm(`File is not saved. Continue anyway?`);
 			if (confirmOpenFile) {
