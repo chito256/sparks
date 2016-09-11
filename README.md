@@ -21,11 +21,9 @@ Sparks is still under development, . You can get the latest release [here](https
 ### Todos
 
 - [x] Fix image's width in preview area.
-- [ ] Add screenshots to README.
+- [x] Add screenshots to README.
 - [x] Configure `WordCounter` to only count alphanumeric words.
 - [ ] Add Wiki.
-- [ ] Add more editor & preview themes.
-- [ ] Re-configure how the `Preview` component uses themes.
 
 ### Tech Stack
 

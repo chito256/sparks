@@ -1,4 +1,4 @@
-const {createWindow} = require('../../../utils/createWindow');
+const {createWindow} = require('../../utils/createWindow');
 
 const file = {
 	label: 'File',

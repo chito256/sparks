@@ -5,7 +5,7 @@ const nodeENV = process.env.NODE_ENV;
 
 module.exports = {
 	entry: [
-		'./app/index.js'
+		'./lib/index.js'
 	],
 	output: {
 		path: path.join(__dirname, 'app', 'build'),

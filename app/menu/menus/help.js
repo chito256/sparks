@@ -7,7 +7,7 @@ const help = {
 			label: 'About',
 			click: (menuItem, browserWindow) => {
 				let aboutWindow = new BrowserWindow({width: 500, height: 280, resizable: false});
-				aboutWindow.loadURL(`file://${__dirname}/../../../about.html`);
+				aboutWindow.loadURL(`file://${__dirname}/../../about.html`);
 			}
 		},
 		{

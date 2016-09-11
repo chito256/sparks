@@ -1,5 +1,5 @@
 const {app, BrowserWindow, Menu} = require('electron');
-const template = require('./main/menu/template');
+const template = require('./menu/template');
 const fs = require('fs');
 const path = require('path');
 
