@@ -5,14 +5,12 @@ import * as actions from '../actions/actions';
 import fileIO from '../ipc/io/fileIO';
 import togglePreview from '../ipc/preview/togglePreview';
 import shouldWindowClose from '../ipc/window/shouldWindowClose';
-import exportToPDF from '../ipc/exportToPDF';
 
 const AppContainer = React.createClass({
 	componentDidMount() {
 		fileIO(this);
 		togglePreview();
 		shouldWindowClose(this);
-		exportToPDF(this);
 	},
 	getInfo() {
 		return {

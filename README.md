@@ -17,22 +17,11 @@ Sparks is still under development, . You can get the latest release [here](https
 - Emojis support :fire:
 - Task lists support
 - Foot notes support
-- Export as PDF
-
-### Screenshots
-
-![Sparks - Writing](./app/static/screenshots/sparks-writing.png)
-
-![Sparks - Preview](./app/static/screenshots/sparks-preview.png)
-
-![Sparks - Settings](./app/static/screenshots/sparks-settings.png)
-
-![Sparks - About](./app/static/screenshots/sparks-about.png)
 
 ### Todos
 
 - [x] Fix image's width in preview area.
-- [x] Add screenshots to README.
+- [ ] Add screenshots to README.
 - [x] Configure `WordCounter` to only count alphanumeric words.
 - [ ] Add Wiki.
 - [ ] Add more editor & preview themes.

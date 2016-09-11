@@ -7,9 +7,9 @@ import './styles/themes/base16-dark.css';
 
 export default function setupCodeMirror (editorNode, onContentChange) {
 	let codeMirrorUserConfig = null;
-	const userEditorConfig = getCurrentWindow().userConfig;
-	if (userEditorConfig) {
-		codeMirrorUserConfig = JSON.parse(userEditorConfig).editor;
+	const appConfig = getCurrentWindow().appConfig;
+	if (appConfig) {
+		codeMirrorUserConfig = appConfig.editor;
 	}
 	const codeMirrorDefaultConfig = {
 		mode: 'markdown',

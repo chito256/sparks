@@ -24,6 +24,18 @@ const view = {
 			type: 'separator'
 		},
 		{
+			label: 'Maximize',
+			click: (menuItem, browserWindow) => {
+				browserWindow.maximize();
+			}
+		},
+		{
+			label: 'Minimize',
+			click: (menuItem, browserWindow) => {
+				browserWindow.minimize();
+			}
+		},
+		{
 			label: 'Full Screen',
 			role: 'togglefullscreen'
 		}

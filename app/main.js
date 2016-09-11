@@ -18,7 +18,8 @@ function createWindow () {
 	window.loadURL(`file://${__dirname}/index.html`);
 
 	// Get user configuration
-	window.userConfig = fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8');
+	const defaultConfig = fs.readFileSync(path.join(__dirname, 'default-config.json'), 'utf8');
+	window.appConfig = JSON.parse(defaultConfig);
 
 	window.on('closed', () => {
 		window = null;

@@ -31,15 +31,6 @@ const file = {
 				const saveAs = true;
 				browserWindow.webContents.send('sparks::save-file', saveAs);
 			}
-		},
-		{
-			type: 'separator'
-		},
-		{
-			label: 'Export to PDF',
-			click: (menuItem, browserWindow) => {
-				browserWindow.webContents.send('sparks::export-to-pdf');
-			}
 		}
 	]
 }
