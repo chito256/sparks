@@ -10,9 +10,9 @@
 
 /* CodeMirror Components */
 .CodeMirror-scroll {
-	box-sizing: border-box;
-	font-size: 16px;
-	font-family: 'Fira Mono', 'Inconsolata', 'Menlo', 'Consolas', monospace;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Fira Mono', 'Inconsolata', 'Menlo', 'Consolas', monospace;
   line-height: 26px;
   padding-left: 20%;
   padding-right: 20%;
@@ -25,38 +25,38 @@
 
 /* Editor Wrapper */
 .app-wrapper .editor-wrapper {
-	position: relative;
-	z-index: 5;
-	float: left;
-	display: block;
-	width: 100%;
-	height: 100%;
-	transition: all 250ms ease-in-out;
+  position: relative;
+  z-index: 5;
+  float: left;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 250ms ease-in-out;
 }
 
 /* Editor - CodeMirror */
 .app-wrapper .editor-wrapper .CodeMirror-wrap {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* Preview Wrapper */
 .app-wrapper .preview-wrapper {
-	float: right;
-	display: block;
-	width: 0;
-	height: 100%;
-	transition: all 250ms ease-in-out;
+  float: right;
+  display: block;
+  width: 0;
+  height: 100%;
+  transition: all 250ms ease-in-out;
 }
 
 /* Preview */
 .app-wrapper .preview-wrapper .preview-area {
-	width: 100%;
-	height: 100%;
-	padding: 36px 15%;
+  width: 100%;
+  height: 100%;
+  padding: 36px 15%;
   word-break: normal;
   white-space: normal;
-	overflow: auto;
+  overflow: auto;
 }
 
 /* ============== */

@@ -4,10 +4,10 @@ const view = require('./menus/view');
 const help = require('./menus/help');
 
 const template = [
-	file,
-	edit,
-	view,
-	help
+  file,
+  edit,
+  view,
+  help
 ]
 
 module.exports = template

@@ -7,27 +7,27 @@ const path = require('path');
 let window;
 
 function createWindow () {
-	const windowDefaults = {
-		width: 960,
-		height: 640,
-		minWidth: 640,
-		minHeight: 420,
-		icon: path.join(__dirname, '..', 'build', 'icons', '256x256.png')
-	};
-	window = new BrowserWindow(windowDefaults);
-	window.loadURL(`file://${__dirname}/index.html`);
+  const windowDefaults = {
+    width: 960,
+    height: 640,
+    minWidth: 640,
+    minHeight: 420,
+    icon: path.join(__dirname, '..', 'build', 'icons', '256x256.png')
+  };
+  window = new BrowserWindow(windowDefaults);
+  window.loadURL(`file://${__dirname}/index.html`);
 
-	// Get user configuration
-	const defaultConfig = fs.readFileSync(path.join(__dirname, 'default-config.json'), 'utf8');
-	window.appConfig = JSON.parse(defaultConfig);
+  // Get user configuration
+  const defaultConfig = fs.readFileSync(path.join(__dirname, 'default-config.json'), 'utf8');
+  window.appConfig = JSON.parse(defaultConfig);
 
-	window.on('closed', () => {
-		window = null;
-	});
+  window.on('closed', () => {
+    window = null;
+  });
 
-	if (process.env.NODE_ENV === 'development') {
-		window.openDevTools();
-	}
+  if (process.env.NODE_ENV === 'development') {
+    window.openDevTools();
+  }
 }
 
 app.on('ready', createWindow);
@@ -38,13 +38,13 @@ Menu.setApplicationMenu(menu);
 
 // For macOS
 app.on('window-all-closed', () => {
-	if (process.platform !== 'darwin') {
-		app.quit();
-	}
+  if (process.platform !== 'darwin') {
+    app.quit();
+  }
 });
 
 app.on('activate', () => {
-	if (window === null) {
-		createWindow();
-	}
+  if (window === null) {
+    createWindow();
+  }
 });

@@ -1,7 +1,7 @@
 <h1 align="center">
-	<img src="./build/icons/256x256.png" width="128">
-	<br>
-	Sparks
+  <img src="./build/icons/256x256.png" width="128">
+  <br>
+  Sparks
 </h1>
 <p align="center" style="font-style: italic;">Minimal / Fast / Open-Source</p>
 
@@ -17,6 +17,10 @@ Sparks is still under development. You can get the latest release [here](https:/
 - Emojis support :fire:
 - Task lists support
 - Foot notes support
+
+### Screenshots
+
+![screenshot](./app/static/screenshot-0.png)
 
 ### Usage
 
@@ -61,7 +65,7 @@ Sparks is an open-source app, you can contribute to the app by [reporting issues
 1. Download or clone the repository.
 2. In the Terminal, `cd` to the repository's dicrectory and run `npm install` to install the dependencies.
 3. Run the command `npm run build:test` to build the unpacked version of the app.
-	> To build the production version, you can run `npm run build:prod`.
+  > To build the production version, you can run `npm run build:prod`.
 4. After building completes, the app will be available in the `dist` directory.
 
 ### License
