@@ -1,4 +1,4 @@
-const {BrowserWindow} = require('electron');
+const {BrowserWindow} = require('electron')
 
 const edit = {
   label: 'Edit',
@@ -27,4 +27,4 @@ const edit = {
   ]
 }
 
-module.exports = edit;
+module.exports = edit

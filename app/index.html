@@ -8,19 +8,19 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i" rel="stylesheet">
   </head>
   <body>
-  <div id="root"></div>
-  <script type="text/javascript">
-  (function () {
-  var bundleJS = document.createElement('script');
-  bundleJS.src = (process.env.NODE_ENV === 'development') ? 'http://localhost:8080/bundle.js' : './build/bundle.js';
-  document.write(bundleJS.outerHTML);
-  }());
-  </script>
-  <script type="text/javascript">
-  const {getCurrentWindow} = require('electron').remote;
-  document.ondrop = (ev) => {
-  getCurrentWindow().webContents.send('sparks::open-file', ev.dataTransfer.files[0].path);
-  }
-  </script>
+    <div id="root"></div>
+    <script type="text/javascript">
+      (function () {
+      var bundleJS = document.createElement('script')
+      bundleJS.src = (process.env.NODE_ENV === 'development') ? 'http://localhost:8080/bundle.js' : './build/bundle.js';
+      document.write(bundleJS.outerHTML)
+      }())
+    </script>
+    <script type="text/javascript">
+      const {getCurrentWindow} = require('electron').remote
+      document.ondrop = (ev) => {
+        getCurrentWindow().webContents.send('sparks::open-file', ev.dataTransfer.files[0].path)
+      }
+    </script>
   </body>
 </html>

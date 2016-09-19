@@ -7,7 +7,7 @@ const view = {
       checked: false,
       accelerator: 'CmdOrCtrl+P',
       click: (menuItem, browserWindow) => {
-        browserWindow.webContents.send('sparks::toggle-preview');
+        browserWindow.webContents.send('sparks::toggle-preview')
       }
     },
     {
@@ -17,7 +17,7 @@ const view = {
       accelerator: 'CmdOrCtrl+Shift+P',
       click: (menuItem, browserWindow) => {
         const fullPreview = true;
-        browserWindow.webContents.send('sparks::toggle-preview', fullPreview);
+        browserWindow.webContents.send('sparks::toggle-preview', fullPreview)
       }
     },
     {
@@ -26,13 +26,13 @@ const view = {
     {
       label: 'Maximize',
       click: (menuItem, browserWindow) => {
-        browserWindow.maximize();
+        browserWindow.maximize()
       }
     },
     {
       label: 'Minimize',
       click: (menuItem, browserWindow) => {
-        browserWindow.minimize();
+        browserWindow.minimize()
       }
     },
     {
@@ -42,4 +42,4 @@ const view = {
   ]
 }
 
-module.exports = view;
+module.exports = view

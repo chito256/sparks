@@ -14,8 +14,8 @@
   font-size: 16px;
   font-family: 'Fira Mono', 'Inconsolata', 'Menlo', 'Consolas', monospace;
   line-height: 26px;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 12%;
+  padding-right: 12%;
   cursor: text;
 }
 .CodeMirror-sizer { padding-top: 28px; }

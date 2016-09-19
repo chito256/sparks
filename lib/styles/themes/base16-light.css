@@ -6,7 +6,7 @@
     CodeMirror template by Jan T. Sott (https://github.com/idleberg/base16-codemirror)
     Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
 
-		Edited by Chi To (GitHub @sjliang)
+    Edited by Chi To (GitHub @sjliang)
 
 */
 
@@ -40,8 +40,7 @@
 .cm-s-base16-light .CodeMirror-matchingbracket { text-decoration: underline; color: white !important; }
 
 /* Overrides default theme */
-.cm-header { font-weight: normal; color: #5CB7F2; }
-.cm-strong { font-weight: bold; }
+.cm-header .cm-strong { font-weight: bold; }
 
 /* Scrollbar */
 .cm-s-base16-light ::-webkit-scrollbar-thumb { background-color: #f4bf75; }

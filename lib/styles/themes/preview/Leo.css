@@ -35,8 +35,8 @@ a:hover { text-decoration: underline; }
 
 /* Lists */
 /* ============== */
-ul, ol { list-style-position: inside; padding-left: 1em; }
-ul.task-list { list-style-type: none; padding-left: 0.5em; }
+ul, ol { list-style-position: inside; padding-left: 0em; }
+ul.task-list { list-style-type: none; padding-left: 0em; }
 li { line-height: 1.6em; }
 li.footnote-item { padding-left: 0; }
 
