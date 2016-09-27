@@ -16,7 +16,7 @@ const help = {
     {
       label: 'Report issues on GitHub',
       click: (menuItem, browserWindow) => {
-        shell.openExternal('https://github.com/sjliang/sparks/issues')
+        shell.openExternal('https://github.com/sgleung/sparks/issues')
       }
     },
     {
@@ -25,13 +25,13 @@ const help = {
     {
       label: 'GitHub',
       click: (menuItem, browserWindow) => {
-        shell.openExternal('https://github.com/sjliang/sparks')
+        shell.openExternal('https://github.com/sgleung/sparks')
       }
     },
     {
       label: 'Twitter',
       click: (menuItem, browserWindow) => {
-        shell.openExternal('https://twitter.com/_sjliang')
+        shell.openExternal('https://twitter.com/sgleung')
       }
     }
   ]

@@ -12,6 +12,7 @@ function createWindow () {
     height: 640,
     minWidth: 420,
     minHeight: 320,
+    frame: false,
     icon: path.join(__dirname, '..', 'build', 'icons', '256x256.png')
   };
   window = new BrowserWindow(windowDefaults)

@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sjliang/sparks.git"
+    "url": "git+https://github.com/sgleung/sparks.git"
   },
   "author": "Chi To",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sjliang/sparks/issues"
+    "url": "https://github.com/sgleung/sparks/issues"
   },
-  "homepage": "https://github.com/sjliang/sparks#readme",
+  "homepage": "https://github.com/sgleung/sparks#readme",
   "devDependencies": {
     "babel-core": "^6.14.0",
     "babel-loader": "^6.2.5",
@@ -53,7 +53,7 @@
     "redux": "^3.6.0"
   },
   "build": {
-    "appId": "sjliang.sparks",
+    "appId": "sgleung.sparks",
     "app-category-type": "public.app-category.utilities",
     "title": "Sparks",
     "asar": false,
@@ -62,6 +62,14 @@
         "deb",
         "zip"
       ]
+    },
+    "win": {
+      "target": [
+        "zip"
+      ]
+    },
+    "squirrelWindows": {
+      "msi": true
     }
   }
 }

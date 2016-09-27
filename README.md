@@ -7,7 +7,7 @@
 
 ### Install
 
-Sparks is still under development. You can get the latest release [here](https://github.com/sjliang/sparks).
+Sparks is still under development. You can get the latest release [here](https://github.com/sgleung/sparks).
 
 ### Features
 
@@ -56,7 +56,7 @@ Sparks was built mainly for the author to learn the tech stack mentioned above. 
 
 ### Contribution Guidelines
 
-Sparks is an open-source app, you can contribute to the app by [reporting issues](https://github.com/sjliang/sparks/issues) or [forking the repo and making pull requests](https://github.com/sjliang/sparks/pulls) on GitHub. If you would like any new feature to be implemented, please post the request on [the Issues page](https://github.com/sjliang/sparks/issues).
+Sparks is an open-source app, you can contribute to the app by [reporting issues](https://github.com/sgleung/sparks/issues) or [forking the repo and making pull requests](https://github.com/sgleung/sparks/pulls) on GitHub. If you would like any new feature to be implemented, please post the request on [the Issues page](https://github.com/sgleung/sparks/issues).
 
 **Build**
 
