@@ -1,3 +1,3 @@
-# Deprecated!
+# Renamed
 
-This app is deprecated! Please check `autumn` for a better Markdown editor
+Sparks has been renamed to Autumn
