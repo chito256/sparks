@@ -1,3 +1,1 @@
-# Renamed
-
-Sparks has been renamed to Autumn
+# App is deprecated!
