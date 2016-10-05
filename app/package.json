@@ -6,7 +6,7 @@
   "main": "./main.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sgleung/sparks.git"
+    "url": "git+https://github.com/chito256/sparks.git"
   },
   "author": {
     "name": "Chi To",
@@ -14,9 +14,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sgleung/sparks/issues"
+    "url": "https://github.com/chito256/sparks/issues"
   },
-  "homepage": "https://github.com/sgleung/sparks#readme",
+  "homepage": "https://github.com/chito256/sparks#readme",
   "dependencies": {
     "codemirror": "^5.18.2",
     "markdown-it": "^7.0.1",
